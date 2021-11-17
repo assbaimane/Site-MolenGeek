@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    font-family: Montserrat;
+}
+
+/* BONUS ANIMATION ROTATION LOGO */
+nav img, #FooterDiv img{
+    animation: roule 3s infinite ;
+}
+@keyframes roule {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Header */ /* REGLER IMAGE AU DEBUT */
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(141, 0, 141);
+}
+header img{
+    position: absolute;
+    left:0px;
+    width: 5vh;
+    height: 5vh;
+}
+header label{
+    color: white;
+    opacity: 0.3;
+    font-size: smaller;
+}
+header input{
+    height: 3vh;
+    margin-left: 1%;
+    color: gray;
+    border:none;
+    border-radius: 3px;
+}
+header button{
+    height: 3vh;
+    margin-left: 1%;
+    background-color: rgb(38, 214, 141);
+    color: rgb(101, 255, 193);
+    border:none;
+    border-radius: 3px;
+}
+
+/* Navigation */ /*REGLER BIEN LA PROPORTION DES SECTIONS */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    /* border-right: 1px solid rgb(235, 235, 235); */
+}
+nav img{   
+    margin-left: 20px; /*j'aurais du mettre image dans un div pour utiliser flex sur le div*/
+    margin-right: 20px;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    border-right: 1px solid rgb(235, 235, 235);
+}
+nav ol{
+    flex:5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    border-right: 1px solid rgb(235, 235, 235);
+}
+nav a {
+    flex:1;
+    position: relative;
+    width: max-content;
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a::before{
+    content:"";
+    left:0%;
+    height: 0px;
+    width:0%;
+    bottom:-2px;
+    position: absolute;
+    background-color : rgb(48, 48, 48);
+    transition: width ease 1s;
+}
+nav a:hover::before{
+    width: 100%;
+    height: 2px;
+}
+nav button{
+    flex:1;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+
+}
+
+/* Section a propos */
+#AboutDiv{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 5vh;
+}
+h1{
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(56, 56, 56) ;
+}
+hr{
+    width: 5%;
+    background-color: rgb(255, 123, 255);
+}
+#AboutDiv p, #AboutDiv ul{
+    text-align: justify;
+    color: rgb(99, 99, 99) ;
+    font-weight: lighter;
+    font-size: small;
+    list-style: none;
+}
+#AboutDiv li::before{
+    content: "• ";
+    color: rgb(209, 9, 209);
+}
+h2{
+    font-weight: lighter;
+    color: rgb(99, 99, 99) ;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(48, 48, 48);
+}
+
+#SocialDiv{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-small;
+    border-bottom: 0.05px solid rgba(116, 116, 116, 0.1);
+}
+#SocialDiv p{
+    margin-right: 30px;
+}
+#SocialDiv img{
+    height: 3%;
+    width: 3%;
+}
+
+#FooterDiv{
+    color: rgba(116, 116, 116, 0.1);;
+    font-size: xx-small;
+    text-align: center;
+    padding-bottom: 3%;
+}
+#FooterDiv img{
+    height: 20%;
+    width: 20%;
+}
