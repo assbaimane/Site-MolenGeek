@@ -6,7 +6,7 @@ Reproduction of the old "About" page of the Molengeek website
 <li>Writing pure CSS
 <li>Managing small animations
 
-<b>An overview of this site is available here </b>: https://assbaimane.github.io/Site-MolenGeek/
+<b>An overview of this site is available here </b>: https://assbaimane.github.io/Site-Youcommunik/
 or here :
 |                            Reproduction                          |
 |------------------------------------------------------------------------|
